@@ -1,0 +1,160 @@
+
+
+.totem-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo */
+  padding: 10px;
+
+}
+
+.totem-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px; /* Mantém uma largura confortável em telas grandes */
+}
+
+.totem-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.totem-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.totem-checkbox input {
+  margin-right: 10px;
+}
+
+.totem-button {
+  width: 100%; /* Ocupa toda a largura no mobile */
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.totem-button--primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.totem-button--primary:hover {
+  background-color: #2980b9;
+}
+
+.totem-button--danger {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.totem-button--danger:hover {
+  background-color: #c0392b;
+}
+
+.totem-error {
+  color: #e74c3c;
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  text-align: center;
+}
+
+.totem-list {
+  width: 100%;
+  max-width: 600px;
+  overflow-y: auto;
+  padding-bottom: 26px;
+  padding-top: 20px;
+  margin-bottom: auto;
+
+}
+
+.totem-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.totem-title {
+  font-size: 18px;
+  margin-top: 0;
+  color: #3498db;
+}
+
+.totem-description,
+.totem-video-url,
+.totem-address {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.totem-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os botões se ajustem em telas pequenas */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.totem-buttons button {
+  flex: 1; /* Faz com que os botões tenham o mesmo tamanho */
+  min-width: 100px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .totem-form,
+  .totem-list {
+    width: 100%;
+  }
+
+  .totem-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .totem-item {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .totem-container {
+    padding: 5px;
+  }
+
+  .totem-form,
+  .totem-list {
+    width: 70%;
+  }
+
+  .totem-buttons {
+    align-items: center;
+
+  }
+}
