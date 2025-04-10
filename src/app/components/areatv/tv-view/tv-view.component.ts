@@ -104,7 +104,7 @@ export class TvViewComponent implements OnInit, OnDestroy {
       const status = isOnline ? 'online' : 'offline';
       const data = { tvId: this.tvId, status };
       const blob = new Blob([JSON.stringify(data)], { type: 'application/json' });
-      const url = 'https://outdoor-backend.onrender.com/tv/status-tv';
+      const url = 'https://outdoor-backend-1.onrender.com/tv/status-tv';
       navigator.sendBeacon(url, blob);
       console.log(`Status atualizado: ${status}`);
 
